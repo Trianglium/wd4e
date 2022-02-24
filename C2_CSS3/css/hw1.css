@@ -1,56 +1,78 @@
+:root {
+  --lightTourq: #60aba8;
+  --rusticOrange: #E1694F;
+  --purpleWhite: #B8A4B9;
+  --inverseRusticOrange: ##a16de8;
+  --mediumCobalt: #13628e;
+  --darkNavyBlue: #011a28;
+}
 body{
 	padding: 5px;
 	margin: 15px;
+  border: 1px
 }
 header{
-	background: #B3B3B3;
+	background: #B8A4B9;
 	padding: 1px 3px;
-	background-image: url("../images/flywheel.jpg");
+	background: url("images/flywheel.jpg");
 	background-size: cover;
 	text-align: center;
+  filter: hue-rotate(100deg);
 }
 h1{
 	text-transform: uppercase;
 	color: #FFFFFF;
 	font-size: 200%;
 }
-nav a{
-	display: inline-block;
-	margin: 0% 2% 2% 4%;
-	border-radius: 6px;
-	text-decoration: none;
-	padding: 1.2% 3.8%;
-	width: 8%;
-	background-color: rgba(255, 255, 255, 0.35);
-	color: #000000;
-	font-size: 110%;
+h2 {
+  color: #13628e;
+}
 
+nav>a:link, nav>a:visited {
+  background-color: rgb(255 249 237 / 0%);
+  border: 2px solid #a16de8;
+  border-radius: 10px;
+  color: #a16de8;
+  padding: 1.2% 3.8%;
+  margin: 0% 2% 2% 4%;
+  text-align: justify;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
 }
-.active{
-	background: #FFFFFF;
-	color: #0000CC;
+
+nav>a:hover {
+  background-color: #a16de8;
+  color: #f1f1f1;
 }
-.right{
+
+nav>a.active {
+  background-color: #a16de8;
+  color: #f1f1f1;
+}
+
+.right {
 	display: inline-block;
     width: 75%;
-	height: 100vh;
+	  height: 100vh;
     padding: 10px;
     overflow: auto;
+    color: rusticOrange;
 }
-.left{
-    display: inline-block;
-    width: 16%;
+.left {
+  display: inline-block;
+  width: 16%;
 	min-width: 125px;
 	height: 100vh;
 	padding: 10px;
 	overflow: auto;
-	background: #9F9528;
+	background-color: #60aba8;
 
 }
-.left img{
+.left img {
     display: block;
     position: relative;
     width: 86%;
-    border: 3px solid #000000;
+    border: 2px solid #13628e;
     margin: 10% 6% 18% 6%;
 }
