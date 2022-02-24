@@ -1,113 +1,61 @@
-:root {
-  --spaceCadetBlue: #222E50;
-  --darkStaleGray: #2A4849;
-  --oliveDrabThree: #7D8B2D;
-  --palePink: #F7DAD9;
-  --thistlePurple: #D4C5E2;
-  --greenSheen: #84B59F;
-  --sage: #AAAE7F;
-  --greenMSU: #243E36;
-  --roseTaupe: #8C5E58;
-  --salmon: #FF7E6B;
-  --vividTang: #FFA69E;
-
+body {
+	padding: 10px;
+	margin: 1%;
 }
 
-title {
-  color: #FFFFFF;
-  text-align:center;
-}
 header {
-  background: url("images/flywheel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: hue-rotate(100deg);
-}
-nav {
-  padding: 10px 25px;
-}
-
-nav>a:link, nav>a:visited {
-  background-color: rgb(255 249 237 / 0%);
-  border: 2px solid #a16de8;
-  border-radius: 10px;
-  color: #a16de8;
-  padding: 10px 15px;
-  margin: 5px 15px;
-  text-align: justify;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-}
-
-nav>a:hover {
-  background-color: #a16de8;
-  color: #f1f1f1;
-}
-
-nav>a.active {
-  background-color: #a16de8;
-  color: #f1f1f1;
+	background-color: #848E66;
+	background-image: url("../images/flywheel.jpg");
+	background-size:100%;
+	padding:20px;
 }
 
 h1 {
-  color: #FFFFFF;
-  text-align: center;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: x-large;
+	text-transform: uppercase;
 }
 
-h2 {
-  color: #E1694F;
-}
-main {
-  border: 1px solid #E1694F;
-  display: flex;
-}
-section {
-  background-color: #333;
-  display: inline;
+nav a{
+	display: inline-block;
+	margin: 2%;
+
+	-webkit-border-radius: 3;
+	-moz-border-radius: 3;
+	-o-border-radius: 3;
+	border-radius: 5px;
+
+	text-decoration: none;
+	padding: 2%;
+
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgba(218,234,213,0.60);
+	width:150px;
+	height: 20px;
 }
 
-body {
-  margin: 5px 10px;
-  padding: 5px 5px;
-  color: #B8A4B9;
-}
-section>a:link, section>a:visited {
-  color: #8C5E58;
-  text-decoration: none;
-}
-section>a:hover {
-  color: #FF7E6B;
-}
-body>p {
-  padding: 25px 15px;
-  margin-left: 80px;
+.active {
+	background-color: #FFFFFF;
 }
 
-aside {
-  background-color: #60aba8;
-  color: #3d2e29;
-  display: inline-block;
-  height: 100%;
-  width: 20%;
-}
 .left {
-  float: left;
-  width: 28%;
-  padding: 10px 5px 10px 5px;
-  margin: 5px 10px 5px 10px;
+	background-color: #848E66;
+	width: 24%;
+	float:left;
+	padding: 5% 0;
 }
+
 .right {
-  width: 80%;
-  margin-left: 15%;
-  margin-right: 5px 5px 5px 5px;
-  padding: 10px 5px 10px 5px;
+	width:74%;
+	display: inline-block;
+	padding-left: 2%;
 }
-img {
-  position: relative;
-  padding: 5px 5px 5px 5px;
-  margin 2px 2px 2px 2px;
-  border: 1px solid #f1f1f1;
-  width: 85%;
-  float: left;
+
+.left img {
+	border: solid 1px #000000;
+	width: 80%;
+	margin: 10%;
 }
