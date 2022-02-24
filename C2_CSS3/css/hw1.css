@@ -5,6 +5,11 @@
   --inverseRusticOrange: ##a16de8;
   --mediumCobalt: #13628e;
   --darkNavyBlue: #011a28;
+  --softYellowy: #FFD78A;
+  --softerYellowy: #FFF4BF;
+  --softwarmtan: #FFD5B1;
+  --brightTourq: #52FFD9;
+  --fadedTourqGray: #6DA9A4;
 }
 body{
 	padding: 5px;
@@ -66,7 +71,7 @@ nav>a.active {
 	height: 100vh;
 	padding: 10px;
 	overflow: auto;
-	background-color: #60aba8;
+	background-color: #011a28;
 
 }
 .left img {
@@ -76,3 +81,62 @@ nav>a.active {
     border: 2px solid #13628e;
     margin: 10% 6% 18% 6%;
 }
+
+ /* Style Table - Course Final Project */
+
+
+ table {
+   width: 70%;
+   font-size: 18px;
+
+ }
+
+ th:first-child, td:first-child {
+   text-align: left;
+ }
+
+ td {
+   text-align: center;
+   padding: 2px 2px 2px 2px;
+   border-radius: 2px;
+   color: #000;
+
+ }
+
+ tr:not(:first-child) {
+   opacity: 0.8;
+ }
+
+ tr:hover {
+   opacity: 1;
+   background-color: #FFD5B1;
+   font-weight: bold;
+ }
+
+ td, th {
+   border: 1px;
+   padding: 1.2% 3.8% 1.2% 3.8%;
+ }
+
+ th {
+   color: #fff;
+   border-bottom: 2px;
+   background: hsla(39, 100%, 77%, 1);
+
+   background: linear-gradient(90deg, hsla(39, 100%, 77%, 1) 1%, hsla(11, 71%, 60%, 1) 100%);
+
+   background: -moz-linear-gradient(90deg, hsla(39, 100%, 77%, 1) 1%, hsla(11, 71%, 60%, 1) 100%);
+
+   background: -webkit-linear-gradient(90deg, hsla(39, 100%, 77%, 1) 1%, hsla(11, 71%, 60%, 1) 100%);
+
+   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFD78A", endColorstr="#E1694F", GradientType=1 );
+
+ }
+
+ table tr:first-child th:first-child {
+     border-top-left-radius: 5px;
+ }
+
+ table tr:first-child th:last-child {
+     border-top-right-radius: 5px;
+ }
