@@ -1,5 +1,5 @@
 # Portfolio 
-Capstone project for the Web Design for Everybody Specialization.
+Capstone project for the Web Design for Everybody Specialization
 
 ## Features
 
@@ -7,7 +7,9 @@ Capstone project for the Web Design for Everybody Specialization.
 
 ## Usage 
 
-## License
+### Acknowledgements
 
-## Acknowledgements 
+### License
+*Copyright © 2022 Jordan Brocker Rudow*
+[MIT License](portfolio/LICENSE)
 
