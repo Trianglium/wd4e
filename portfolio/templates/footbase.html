@@ -1,0 +1,30 @@
+{% extends "navbase.html" %}
+{% block footer %}
+<div class="col-4 offset-1 col-sm-2">
+    <h5>Site Map</h5>
+    <ul class="list-unstyled">
+        <li><a href="{% url 'wsite:home' %}">Portfolio</a></li>
+        <li><a href="{% url 'wsite:about' %}">About</a></li>
+        <li><a href="{% url 'wsite:projects' %}">Projects</a></li>
+        <li><a href="{% url 'wsite:contact' %}">Contact</a></li>
+    </ul>
+</div>
+<div class="col-7 col-sm-5">
+    <h5>Contact</h5>
+    <address>
+      <i class="fa-solid fa-square-phone"></i> 999 999 9999<br>
+      <i class="fa-solid fa-square-envelope"></i> <a href="mailto:">myemail@gmail.com</a>
+</address>
+</div>
+<div class="col-12 col-sm-4 align-self-center">
+    <div class="text-center">
+        <a href="https://github.com/Trianglium"><i class="fa fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/jordan-brocker-rudow-635944210"><i class="fa fa-linkedin-square"></i></a>
+    </div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-auto">
+    <p>Copyright © 2022 Jordan Brocker Rudow</p>
+</div>
+{% endblock %}
