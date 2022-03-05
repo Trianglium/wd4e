@@ -19,5 +19,7 @@ from portfolio.views import AboutView, ContactView, HomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('')
+    path('', HomeView.as_view(), name='home'),
+    path('about/', AboutView.as_view(), name='about'),
+    path('contact/', ContactView.as_view(), name='contact'),
 ]
