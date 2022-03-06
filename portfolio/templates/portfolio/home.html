@@ -1,162 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% load static %}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link href="css/styles.css" rel="stylesheet">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
-  <!-- Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/4690b49544.js" crossorigin="anonymous"></script>
-
-  <!-- Github Contribution Calendar Script -->
-  <script
-    src="gh-calendar/github-calendar.min.js"></script>
-
-  <!-- Github Contribution Calendar Theme -->
-  <link rel="stylesheet" href="gh-calendar/github-calendar-responsive.css"/>
-
-  <title>Portfolio | Jordan Brocker Rudow</title>
-
-</head>
-
-<body>
-  <nav class="navbar navbar-dark bg-info navbar-expand-sm fixed-top">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-          </button>
-           <a class="navbar-brand" href="./index.html">Jordan Brocker Rudow</a>
-           <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item  active"><a class="nav-link" href="./home.html"><span class="fa fa-home fa-lg"></span> Portfolio</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./about"><span class="fa fa-info fa-lg"></span> About</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Projects</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Jordan's Portfolio</h1>
-                    <p class="h5">Welcome to my portfolio! If you have any questions, don't hesitate to reach out.</p>
-                </div>
-                <div class="col-12 col-sm">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="row row-content">
-          <ol class="col-12 breadcrumb">
-                <li class="breadcrumb-item active"><a href="/">Portfolio /</a></li>
-            </ol>
-            <div class="col">
-               <h3>Portfolio</h3>
-               <hr>
-            </div>
-        </div>
-
-        <div class="row row-content">
-            <div class="col-xs-12 col-sm-6">
-                <h2></h2>
-                <p><em></em></p>
-            </div>
-            <div>
-            </div>
-        </div>
+{% block title %} Portfolio | Home {% endblock %}
 
 
-        <div class="row row-content">
-            <div class="col">
-                <h2>Latest Projects</h2>
-                <h3>Critter Cache<br><small> An Animal themed matching game written in Python</small></h3>
-                <span class="d-none d-sm-none d-md-block">
-                  <p><i class="fa-brands fa-python"></i>  <i class="fa-solid fa-gamepad"></i>  <i class="fa-brands fa-creative-commons-pd"></i></p>
-                  <p><i class="fa-brands fa-github"></i><em> Fork it on Github</em></p>
-                </span>
-                <h3>Movie Night<br><small> The Social Movie App built with Django, Python, and React</small></h3>
-                <span class="d-none d-sm-none d-md-block">
-                  <p>
-                    <i class="fa-brands fa-js"></i>
-                    <i class="fa-brands fa-react"></i>
-                    <i class="fa-brands fa-python"></i>
-                  </p>
-                  <p>
-                    <i class="fa-brands fa-github"></i><em> Fork it on Github</em>
-                  </p>
+{% block jumbo_head %}Jordan's Portfolio{% endblock %}
+{% block jumbo_text %}{% endblock %}
 
-                </span>
-                <h3>Open Source Contributions<small></small></h3>
-                <span class="d-none d-sm-none d-md-block">
-                  <p><em></em></p>
-                <!-- Container for github contribution calendar. -->
-                <div class="calendar">
-                </div>
-                </span>
-                <h3><small></small></h3>
-                <span class="d-none d-sm-none d-md-block">
-                  <p><em></em></p>
-                </span>
-            </div>
-       </div>
 
-    </div>
 
-    <footer class="footer bg-light">
-        <div class="container">
-            <div class="row mb-1">
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Site Map</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="/">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Contact</h5>
-                    <address>
-    		              <i class="fa-solid fa-square-phone"></i> 999 999 9999<br>
-                      <i class="fa-solid fa-square-envelope"></i> <a href="mailto:">myemail@gmail.com</a>
-		           </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a href="https://github.com/Trianglium"><i class="fa fa-github-square"></i></a>
-                        <a href="https://www.linkedin.com/in/jordan-brocker-rudow-635944210"><i class="fa fa-linkedin-square"></i></a>
-                    </div>
-                </div>
-           </div>
-           <div class="row justify-content-center">
-                <div class="col-auto">
-                    <p>Copyright © 2022 Jordan Brocker Rudow</p>
-                </div>
-           </div>
-        </div>
-    </footer>
+{% block activepagetitle %}Portfolio Home{% endblock %}
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 
-    <!-- Github Contribution Calendar Script -->
-    <script>
-        GitHubCalendar(".calendar", "trianglium");
-        GitHubCalendar(".calendar", "trianglium", { responsive: true });
-    </script>
-</body>
+{% block content_head %}
+{% endblock %}
 
-</html>
+{% block content_text %}
+{% endblock %}
+
+
+{% block content %}
+
+{% endblock %}
