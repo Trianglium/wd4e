@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4690b49544.js" crossorigin="anonymous"></script>
 
-  <title>{% block title %}{% endblock %}</title>
+  <title>{% block title %}Portfolio |  {{ title }}{% endblock %}</title>
 
 </head>
 
@@ -24,7 +24,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
           </button>
-           <a class="navbar-brand"  href="{% url 'wsite:home' %}">Jordan Brocker Rudow</a>
+           <a class="navbar-brand"  href="{% url 'home' %}">Jordan Brocker Rudow</a>
            <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                   {% block navlinks %}
@@ -52,11 +52,11 @@
     <div class="container">
         <div class="row row-content">
           <ol class="col-12 breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'wsite:home' %}">Portfolio</a></li>
-                <li class="breadcrumb-item active">{% block activebreadcrumb %}{% endblock %}</li>
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Portfolio</a></li>
+                <li class="breadcrumb-item active">{% block activebreadcrumb %}{{ title }}{% endblock %}</li>
             </ol>
             <div class="col">
-               <h3>{% block activepagetitle %}{% endblock %}</h3>
+               <h3>{% block activepagetitle %}{{ title }}{% endblock %}</h3>
                <hr>
             </div>
         </div>
