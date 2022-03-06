@@ -1,12 +1,56 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block head %}
+<!-- Github Contribution Calendar Script -->
+<script
+  src="gh-calendar/github-calendar.min.js"></script>
+
+<!-- Github Contribution Calendar Theme -->
+<link rel="stylesheet" href="gh-calendar/github-calendar-responsive.css"/>
+{% endblock %}
 
 {% block jumbo_head %}Jordan's Portfolio{% endblock %}
 {% block jumbo_text %}{% endblock %}
 
+{% block breadcrumb %}
+{% endblock %}
+
 
 {% block content_head %}
+    <div class="col">
+        <h2>Latest Projects</h2>
+        <h3>Critter Cache<br><small> An Animal themed matching game written in Python</small></h3>
+        <span class="d-none d-sm-none d-md-block">
+          <p><i class="fa-brands fa-python"></i>  <i class="fa-solid fa-gamepad"></i>  <i class="fa-brands fa-creative-commons-pd"></i></p>
+          <p><i class="fa-brands fa-github"></i><em> Fork it on Github</em></p>
+        </span>
+        <h3>Movie Night<br><small> The Social Movie App built with Django, Python, and React</small></h3>
+        <span class="d-none d-sm-none d-md-block">
+          <p>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-python"></i>
+          </p>
+          <p>
+            <i class="fa-brands fa-github"></i><em> Fork it on Github</em>
+          </p>
+
+        </span>
+        <h3>Open Source Contributions<small></small></h3>
+        <span class="d-none d-sm-none d-md-block">
+          <p><em></em></p>
+        <!-- Container for github contribution calendar. -->
+        <div class="calendar">
+        </div>
+        </span>
+        <h3><small></small></h3>
+        <span class="d-none d-sm-none d-md-block">
+          <p><em></em></p>
+        </span>
+    </div>
+
+</div>
 {% endblock %}
 
 {% block content_text %}
@@ -15,4 +59,12 @@
 
 {% block content %}
 
+{% endblock %}
+
+{% block bodyscripts %}
+<!-- Github Contribution Calendar Script -->
+<script>
+    GitHubCalendar(".calendar", "trianglium");
+    GitHubCalendar(".calendar", "trianglium", { responsive: true });
+</script>
 {% endblock %}
