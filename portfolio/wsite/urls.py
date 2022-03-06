@@ -20,7 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from portfolio.views import AboutView, ContactView, HomeView, ProjectsView
-
+from static import *
 
 
 urlpatterns = [
