@@ -24,7 +24,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
           </button>
-           <a class="navbar-brand" href="./index.html">Jordan Brocker Rudow</a>
+           <a class="navbar-brand"  href="{% url 'wsite:home' %}">Jordan Brocker Rudow</a>
            <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                   {% block navlinks %}
@@ -73,32 +73,6 @@
 
         <div class="row row-content">
           {% block content %}{% endblock %}
-            <div class="col">
-                <h2>Technologies</h2>
-                <h3>Programming Languages<small></small></h3>
-                <span class="d-none d-sm-none d-md-block">
-                  <p>Python<em></em></p>
-                  <p>JavaScript<em>(HTML/CSS)</em></p>
-                  <p>Java<em></em></p>
-                </span>
-                <h3>Frameworks<small></small></h3>
-                <span class="d-none d-sm-none d-md-block">
-                  <p>Django<em></em></p>
-                  <p>Django Rest Framework<em></em></p>
-                  <p>Flask<em></em></p>
-                  <p>Pygame<em></em></p>
-                  <p>React</p>
-
-                </span>
-                <h3>Databases<small></small></h3>
-                <span class="d-none d-sm-none d-md-block">
-                  <p>MySQL/MariaDB<em></em></p>
-                </span>
-                <h3>Development Tools<small></small></h3>
-                <span class="d-none d-sm-none d-md-block">
-                  <p>Git / Github<em></em></p>
-                </span>
-            </div>
        </div>
 
     </div>
