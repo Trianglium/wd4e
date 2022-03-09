@@ -24,12 +24,36 @@
   </script>
   <!-- Github Contribution Calendar Theme -->
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-  <style></style>
+  <style>
+  :root {
+      --color-calendar-graph-day-bg: #dddbdb;
+      --color-calendar-graph-day-L1-bg: #7c00ff;
+      --color-calendar-graph-day-L2-bg: #249BCF;
+      --color-calendar-graph-day-L3-bg: #2E5CE8;
+      --color-calendar-graph-day-L4-bg: #A41DDE;
+  }
+  .hidden {
+    display: none;
+  }
+  .bg-purple {
+    color: #212529;
+  }
+
+  .bg-purple:hover {
+    background: #412C9E;
+  }
+  .gh {
+    color: #1d1c1f;
+  }
+  .gh:hover {
+    color: #080808;
+  }
+
+  </style>
 </head>
 <body>
 	<div class="container">
-    <!-- Nav -->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top text-dark">
+      <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top text-dark">
        <div class="container">
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -44,6 +68,7 @@
           </div>
         </div>
       </nav>
+    </div>
       <!-- Begin Header -->
       <div class="container">
         <header>
