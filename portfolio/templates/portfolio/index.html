@@ -1,5 +1,5 @@
-<!Doctype html> 
-<html lang="en-US">
+<!Doctype html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,8 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  
-  
+
+
   <!-- Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4690b49544.js" crossorigin="anonymous"></script>
@@ -41,9 +41,9 @@
          <a class="navbar-brand"  href="#">Jordan Brocker Rudow</a>
          <div class="collapse navbar-collapse" id="Navbar">
            <ul class="navbar-nav mr-auto">
-         <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             </ul>
           </div>
         </div>
@@ -73,7 +73,7 @@
               Critter Cache
             </h4>
             <p>
-              <i class="fa-brands fa-github"></i><em> Fork it on Github</em>
+              <a href="https://github.com/Trianglium/critter-cache" data-toggle="tooltip" data-placement="right" title="Fork it on Github"><i class="fa-brands fa-github"></i></a>
             </p>
             <p>
               An Animal Memory Game Written in Python.
@@ -83,8 +83,7 @@
             <h4>
               Movie Night
             </h4>
-            <p>
-              <i class="fa-brands fa-github"></i><em> Fork it on Github</em>
+            <p> <a href="https://github.com/Trianglium/MovieNight" data-toggle="tooltip" data-placement="right" title="Fork it on Github"><i class="fa-brands fa-github"></i></a>
             </p>
             <p>
               The Social Planning app for  Movie lovers.
@@ -126,8 +125,8 @@
         <div class="p-2 col-12 col-md-4">
          <div class="card">
           <div class="card-body">
-            <h4 class="card-title"> 
-              Post 3 Title 
+            <h4 class="card-title">
+              Post 3 Title
              </h4>
             <p class="card-text">
               Post 3 Summary
@@ -140,20 +139,18 @@
     </div>
 	<footer>
       <div class="container p-2">
-        <div class="d-flex flex-row">
-          <div class="col-4">
-            <a href="#"><i class='fab fa-github-square' style='font-size:48px;'></i></a>
+        <div class="d-flex justify-content-center">
+          <div class="col-2 offset-1">
+            <a href="https://github.com/Trianglium"><i class='fab fa-github-square' style='font-size:48px;'></i></a>
           </div>
-          <div class="col-4">
-              <a href="#"><i class='fab fa-linkedin' style='font-size:48px;'></i></a>
+          <div class="col-2">
+              <a href="https://www.linkedin.com/in/jordan-brocker-rudow/"><i class='fab fa-linkedin' style='font-size:48px;'></i></a>
           </div>
-          <div class="col-4">
+          <div class="col-2">
               <a href="#"><i class='fas fa-envelope-square' style='font-size:48px;'></i></a>
           </div>
          </div>
         </div>
-        
-      </div>
       </footer>
       <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -162,8 +159,15 @@
 
       <!-- Github Contribution Calendar Script -->
       <script>
-   	 GitHubCalendar(".calendar", "trianglium");
-   	 GitHubCalendar(".calendar", "trianglium", { responsive: true });
+     	 GitHubCalendar(".calendar", "trianglium");
+     	 GitHubCalendar(".calendar", "trianglium", { responsive: true });
       </script>
+
+      <!-- Github Icon Tool Tip -->
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+</script>
 </body>
 </html>
