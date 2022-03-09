@@ -25,19 +25,34 @@
   <!-- Github Contribution Calendar Theme -->
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
   <style>
+  :root {
+      --color-calendar-graph-day-bg: #dddbdb;
+      --color-calendar-graph-day-L1-bg: #7c00ff;
+      --color-calendar-graph-day-L2-bg: #249BCF;
+      --color-calendar-graph-day-L3-bg: #2E5CE8;
+      --color-calendar-graph-day-L4-bg: #A41DDE;
+  }
   .hidden {
     display: none;
+  }
+  .bg-purple {
+    color: #212529;
+  }
+
+  .bg-purple:hover {
+    background: #412C9E;
+  }
+  .gh {
+    color: #1d1c1f;
+  }
+  .gh:hover {
+    color: #080808;
   }
 
   </style>
 </head>
 <body>
 	<div class="container">
-	<header>
-		<div class="header">
-			<h1>Portfolio</h1>
-		</div>
-	</header>
       <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top text-dark">
        <div class="container">
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -53,6 +68,7 @@
           </div>
         </div>
       </nav>
+    </div>
       <!-- Alert Messages -->
       <div class="container">
         <div class="hidden" id="sentAlert">
@@ -105,8 +121,15 @@
     </div>
 
 
-
-	<div class="row">
+   <div class="container">
+      <header>
+        <div class="header">
+          <h1>Portfolio</h1>
+        </div>
+      </header>
+    </div>
+    <div class="container">
+	     <div class="row">
           <div class="p-2 col-12">
             <h2>
               Open Source Contributions
@@ -117,8 +140,8 @@
             <div class="calendar">
             </div>
           </div>
-	</div>
-	<div class="row">
+	       </div>
+	       <div class="row">
           <div class="p-2 col-12">
             <h2>
               Latest Projects
@@ -131,7 +154,7 @@
               Critter Cache
             </h4>
             <p>
-              <a href="https://github.com/Trianglium/critter-cache" data-toggle="tooltip" data-placement="right" title="Fork it on Github"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/Trianglium/critter-cache" data-toggle="tooltip" data-placement="right" title="Fork it on Github" class="gh"><i class="fa-brands fa-github"></i></a>
             </p>
             <p>
               An Animal Memory Game Written in Python.
@@ -141,58 +164,45 @@
             <h4>
               Movie Night
             </h4>
-            <p> <a href="https://github.com/Trianglium/MovieNight" data-toggle="tooltip" data-placement="right" title="Fork it on Github"><i class="fa-brands fa-github"></i></a>
+            <p> <a href="https://github.com/Trianglium/MovieNight" data-toggle="tooltip" data-placement="right" title="Fork it on Github" class="gh"><i class="fa-brands fa-github"></i></a>
             </p>
             <p>
               The Social Planning app for  Movie lovers.
             </p>
           </div>
-		</div>
+		  </div>
       <div class="row">
-		<div class="p-2 col-12">
-			<h2>Recent Blog Posts</h2>
-        </div>
+		      <div class="col-12">
+			         <h2>Recent Blog Posts</h2>
+          </div>
       </div>
       <div class="row">
-        <div class="p-2 col-12 col-md-4">
+        <div class="col-6 p-2">
           <div class="card">
             <div class="card-body">
-            <h4 class="card-title">
-              Post Title
-            </h4>
-            <p class="card-text">
-              Post Text Description Summary..
-            </p>
-            <a href="#" class="card-link">Read More</a>
+              <h4 class="card-title">
+                Post Title
+              </h4>
+              <p class="card-text">
+                Post Text Description Summary..
+              </p>
+              <a href="#" class="card-link"><em>Read More<em></a>
           </div>
           </div>
         </div>
-        <div class="p-2 col-12 col-md-4">
-         <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">
-              Post 2 Title
-            </h4>
-            <p class="card-text">
-              Summary of Post 2...
-            </p>
-            <a href="#" class="card-link">Read More</a>
+        <div class="col-6 p-2">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                Post Title
+              </h4>
+              <p class="card-text">
+                Post Text Description Summary..
+              </p>
+              <a href="#" class="card-link"><em>Read More<em></a>
           </div>
-          </div>
+         </div>
         </div>
-        <div class="p-2 col-12 col-md-4">
-         <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">
-              Post 3 Title
-             </h4>
-            <p class="card-text">
-              Post 3 Summary
-            </p>
-            <a href="#" class="card-link">Read More</a>
-          </div>
-		</div>
-      </div>
       </div>
     </div>
 	<footer>
