@@ -50,8 +50,9 @@
       </nav>
       <!-- Alert Messages -->
       <div class="container">
-        <div class="alert alert-success hide" id="sentAlert">
-          <button type="button" class="close">&times;</button>
+        <div class="alert alert-success dismissable" id="sentAlert">
+          <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">&times;</button>
           <strong>Success!</strong> Message sent, check your inbox for a follow up email.
         </div>
       </div>
@@ -199,7 +200,7 @@
               <a href="https://www.linkedin.com/in/jordan-brocker-rudow/"><i class='fab fa-linkedin' style='font-size:48px;'></i></a>
           </div>
           <div class="col-2">
-              <a href="#"><i class='fas fa-envelope-square' style='font-size:48px;'></i></a>
+              <a href="#contactModal" data-toggle="modal" data-target="#contactModal"><i class='fas fa-envelope-square' style='font-size:48px;'></i></a>
           </div>
          </div>
         </div>
@@ -229,17 +230,6 @@
             $("#sentAlert").alert("close");
           });
         });
-      </script>
-      <script>
-      $(document).ready(function(){
-        $("#sentAlert").hide();
-        });
-      });
-      </script>
-      <script>
-      function emailMsg{
-        $("#sentAlert").show();
-        }
       </script>
 </body>
 </html>
