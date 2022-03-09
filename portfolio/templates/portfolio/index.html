@@ -42,12 +42,48 @@
          <div class="collapse navbar-collapse" id="Navbar">
            <ul class="navbar-nav mr-auto">
              <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+             <li class="nav-item"><a class="nav-link" href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact</a></li>
              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             </ul>
           </div>
         </div>
       </nav>
+      <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Send a Message</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row">
+                  <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Name" name="contactName">
+                     </div>
+                   <div class="col-12">
+
+                      <input type="text" class="form-control" id="email" placeholder="Email Address" name="contactEmail">
+                   </div>
+                   <div class="col-12">
+                      <label for="contactMsg">Message</label>
+                   </div>
+                   <div class="col-12">
+                      <textarea class="form-control" rows="5" id="contactMsg" placeholder="Email Address" name="contactMsg"></textarea>
+                   </div>
+               	</div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Send</button>
+           </div>
+          </div>
+        </div>
+    </div>
+
+
+
 	<div class="row">
           <div class="p-2 col-12">
             <h2>
