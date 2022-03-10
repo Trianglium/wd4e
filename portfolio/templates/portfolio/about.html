@@ -53,6 +53,18 @@
     height: 100%;
     border: 1px solid black;
   }
+  .modal-header-bp {
+    border-bottom: #7c00ff;
+  }
+  .modal-content-bp {
+    background-color: #7c00ff;
+  }
+  .modal-title-lite {
+    color: #dddbdb
+  }
+  label {
+    color: #8079ba;
+  }
   </style>
 </head>
 <body>
@@ -65,7 +77,7 @@
          <a class="navbar-brand"  href="/">Jordan Brocker Rudow</a>
          <div class="collapse navbar-collapse" id="Navbar">
            <ul class="navbar-nav mr-auto">
-             <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+             <li class="nav-item"><a class="nav-link" href="https://github.com/Trianglium">Projects</a></li>
              <li class="nav-item"><a class="nav-link" href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact</a></li>
              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             </ul>
@@ -84,9 +96,9 @@
     <!-- Contact Modal -->
     <div class="modal fade" id="contactModal">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Send a Message</h4>
+          <div class="modal-content modal-content-bp">
+            <div class="modal-header modal-header-bp">
+              <h4 class="modal-title modal-title-lite">Send a Message</h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -732,13 +744,13 @@
         <div class="container p-2">
           <div class="d-flex justify-content-center">
             <div class="col-2 offset-1">
-              <a href="https://github.com/Trianglium"><i class='fab fa-github-square' style='font-size:48px;'></i></a>
+              <a href="https://github.com/Trianglium"><i class='fab fa-github-square' style='font-size:48px;color:#A41DDE;'></i></a>
             </div>
             <div class="col-2">
-                <a href="https://www.linkedin.com/in/jordan-brocker-rudow/"><i class='fab fa-linkedin' style='font-size:48px;'></i></a>
+                <a href="https://www.linkedin.com/in/jordan-brocker-rudow/"><i class='fab fa-linkedin' style='font-size:48px;color:#A41DDE;'></i></a>
             </div>
             <div class="col-2">
-                <a href="#contactModal" data-toggle="modal" data-target="#contactModal"><i class='fas fa-envelope-square' style='font-size:48px;'></i></a>
+                <a href="#contactModal" data-toggle="modal" data-target="#contactModal"><i class='fas fa-envelope-square' style='font-size:48px;color:#A41DDE;'></i></a>
             </div>
            </div>
           </div>
