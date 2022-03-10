@@ -19,14 +19,12 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from portfolio.views import AboutView, IndexView
 from static import *
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', IndexView.as_view(), name='index'),
-    path('about/', AboutView.as_view(), name='about'),
+    path('portfolio/', include('portfolio.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
