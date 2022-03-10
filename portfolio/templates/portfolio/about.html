@@ -74,12 +74,12 @@
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
           </button>
-         <a class="navbar-brand" href="{% url 'index' %}">Jordan Brocker Rudow</a>
+         <a class="navbar-brand" href="{% url 'portfolio:portfolio_index' %}">Jordan Brocker Rudow</a>
          <div class="collapse navbar-collapse" id="Navbar">
            <ul class="navbar-nav mr-auto">
              <li class="nav-item"><a class="nav-link" href="https://github.com/Trianglium">Projects</a></li>
              <li class="nav-item"><a class="nav-link" href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact</a></li>
-             <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+             <li class="nav-item"><a class="nav-link" href="{% url 'portfolio:portfolio_about' %}">About</a></li>
             </ul>
           </div>
         </div>
@@ -130,7 +130,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal" onlclick="emailMsg()">Send</button>
+              <button type="button" class="btn btn-info" data-dismiss="modal" onclick="emailSuccess()">Send</button>
            </div>
           </div>
         </div>
